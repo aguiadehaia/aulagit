@@ -1,0 +1,153 @@
+Microsoft Windows [versão 10.0.10240]
+(c) 2015 Microsoft Corporation. Todos os direitos reservados.
+
+C:\Users\imagemx64>cd git
+O sistema não pode encontrar o caminho especificado.
+
+C:\Users\imagemx64>cd..
+
+C:\Users>cd..
+
+C:\>cd git
+
+C:\git>git --version
+git version 2.24.0.windows.1
+
+C:\git>git init
+Initialized empty Git repository in C:/git/.git/
+
+C:\git>git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+C:\git>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Novo Documento de Texto.txt
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\git>git add
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+
+C:\git>git add index.html
+
+C:\git>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Novo Documento de Texto.txt
+
+
+C:\git>git add novo documento de texto.txt
+fatal: pathspec 'novo' did not match any files
+
+C:\git>git add Novo Documento de Texto.txt
+fatal: pathspec 'Novo' did not match any files
+
+C:\git>git add*
+git: 'add*' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+C:\git>git add *
+
+C:\git>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Novo Documento de Texto.txt
+        new file:   index.html
+        new file:   nada.txt
+        new file:   tudo.txt
+
+
+C:\git>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Novo Documento de Texto.txt
+        new file:   index.html
+        new file:   nada.txt
+        new file:   tudo.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   tudo.txt
+
+
+C:\git>git add tudo.txt
+
+C:\git>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Novo Documento de Texto.txt
+        new file:   index.html
+        new file:   nada.txt
+        new file:   tudo.txt
+
+
+C:\git>git rm --cached nada
+fatal: pathspec 'nada' did not match any files
+
+C:\git>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Novo Documento de Texto.txt
+        new file:   index.html
+        new file:   nada.txt
+        new file:   tudo.txt
+
+
+C:\git>git rm --cached nada.txt
+rm 'nada.txt'
+
+C:\git>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Novo Documento de Texto.txt
+        new file:   index.html
+        new file:   tudo.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        nada.txt
+
+
+C:\git>
